@@ -16,7 +16,7 @@ const TeacherInfo = () => {
                     <div className="md:w-2/3 p-8 md:p-12 flex flex-col justify-center">
                         <div className="uppercase tracking-wide text-sm text-blue-600 font-semibold">Tu Instructor</div>
                         <h2 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                            Dr. Roberto Pérez
+                            Dr. Lucas Palacio
                         </h2>
                         <p className="mt-4 text-lg text-gray-500">
                             Médico Veterinario con más de 15 años de experiencia en clínica de pequeños animales y docencia. Apasionado por la formación de nuevos profesionales comprometidos con el bienestar animal.
