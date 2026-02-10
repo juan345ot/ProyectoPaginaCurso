@@ -3,41 +3,35 @@ import { Facebook, Instagram, Twitter } from 'lucide-react';
 
 const Footer = () => {
     return (
-        <footer className="bg-gray-900 text-white py-12">
+        <footer className="bg-secondary text-white py-12">
             <div className="container mx-auto px-4">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 border-b border-gray-800 pb-8">
-                    <div className="col-span-1 md:col-span-2">
-                        <h3 className="text-2xl font-bold text-blue-500 mb-4">VetAssistant</h3>
-                        <p className="text-gray-400 max-w-sm">
-                            Formando profesionales comprometidos con la salud y el bienestar animal. Tu carrera empieza acá.
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 border-b border-primary/30 pb-8">
+                    <div className="col-span-1">
+                        <h3 className="text-2xl font-bold text-primary mb-4">INAVET</h3>
+                        <p className="text-gray-200 max-w-sm">
+                            Instituto de formación de Auxiliares Veterinarios.
                         </p>
                     </div>
                     <div>
-                        <h4 className="text-lg font-semibold mb-4">Enlaces Rápidos</h4>
+                        <h4 className="text-lg font-semibold mb-4 text-primary">Enlaces Rápidos</h4>
                         <ul className="space-y-2">
-                            <li><a href="#inicio" className="text-gray-400 hover:text-white transition-colors">Inicio</a></li>
-                            <li><a href="#info" className="text-gray-400 hover:text-white transition-colors">Curso</a></li>
-                            <li><a href="#profesor" className="text-gray-400 hover:text-white transition-colors">Docente</a></li>
-                            <li><a href="#contacto" className="text-gray-400 hover:text-white transition-colors">Contacto</a></li>
+                            <li><a href="#inicio" className="text-gray-200 hover:text-white transition-colors">Inicio</a></li>
+                            <li><a href="#inavet" className="text-gray-200 hover:text-white transition-colors">Qué es INAVET</a></li>
+                            <li><a href="#modalidad" className="text-gray-200 hover:text-white transition-colors">Modalidad</a></li>
+                            <li><a href="#faq" className="text-gray-200 hover:text-white transition-colors">FAQ</a></li>
                         </ul>
                     </div>
                     <div>
-                        <h4 className="text-lg font-semibold mb-4">Seguinos</h4>
+                        <h4 className="text-lg font-semibold mb-4 text-primary">Seguinos</h4>
                         <div className="flex space-x-4">
-                            <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-600 transition-colors">
-                                <Facebook size={20} />
-                            </a>
-                            <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-pink-600 transition-colors">
+                            <a href="https://instagram.com/institutoinavet" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-pink-600 transition-colors">
                                 <Instagram size={20} />
-                            </a>
-                            <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-400 transition-colors">
-                                <Twitter size={20} />
                             </a>
                         </div>
                     </div>
                 </div>
-                <div className="text-center text-gray-500 text-sm">
-                    &copy; {new Date().getFullYear()} VetAssistant. Todos los derechos reservados.
+                <div className="text-center text-gray-300 text-sm">
+                    &copy; {new Date().getFullYear()} INAVET. Todos los derechos reservados.
                 </div>
             </div>
         </footer>

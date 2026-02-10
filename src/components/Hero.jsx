@@ -15,23 +15,20 @@ const Hero = () => {
 
             <div className="container mx-auto px-4 z-10 text-center text-white">
                 <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in-up">
-                    Tu Futuro Cuidando a los que Más Amamos
+                    Formación Online de Auxiliar Veterinario
                 </h1>
                 <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto text-gray-200">
-                    Formate como Auxiliar Veterinario y convertí tu pasión por los animales en tu profesión.
+                    Estudiá desde cualquier lugar, comenzá en cualquier mes del año, con clases grabadas y certificación incluida.
                 </p>
-                <div className="flex flex-col sm:flex-row justify-center gap-4">
-                    <button 
-                        onClick={() => document.getElementById('info').scrollIntoView({ behavior: 'smooth' })}
-                        className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105 shadow-lg"
-                    >
-                        Ver Programa
-                    </button>
+                <div className="flex flex-col items-center gap-4">
+                     <p className="text-lg font-semibold text-primary">
+                        👉 Sin fechas fijas. Avanzás a tu ritmo.
+                    </p>
                     <button 
                         onClick={() => document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' })}
-                        className="bg-transparent border-2 border-white hover:bg-white hover:text-blue-900 text-white font-bold py-3 px-8 rounded-full transition-all"
+                        className="bg-primary hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105 shadow-lg mt-4"
                     >
-                        Inscribirme Ahora
+                        Inscribirme / Pedir información
                     </button>
                 </div>
             </div>

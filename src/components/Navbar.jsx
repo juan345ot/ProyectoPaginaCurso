@@ -23,17 +23,19 @@ const Navbar = () => {
 
     const navLinks = [
         { name: 'Inicio', id: 'inicio' },
-        { name: 'Info del Curso', id: 'info' },
-        { name: 'Profesor', id: 'profesor' },
+        { name: 'Qué es INAVET', id: 'inavet' },
+        { name: 'Modalidad', id: 'modalidad' },
+        { name: 'Inversión', id: 'inversion' },
+        { name: 'FAQ', id: 'faq' },
         { name: 'Contacto', id: 'contacto' },
     ];
 
     return (
         <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md py-4' : 'bg-transparent py-6'}`}>
             <div className="container mx-auto px-4 flex justify-between items-center">
-                <div className="flex items-center space-x-2 text-2xl font-bold text-blue-600 cursor-pointer" onClick={() => scrollToSection('inicio')}>
+                <div className="flex items-center space-x-2 text-2xl font-bold text-primary cursor-pointer" onClick={() => scrollToSection('inicio')}>
                     <Stethoscope size={32} />
-                    <span>VetAssistant</span>
+                    <span>INAVET</span>
                 </div>
 
                 {/* Desktop Menu */}
@@ -42,7 +44,7 @@ const Navbar = () => {
                         <button
                             key={link.name}
                             onClick={() => scrollToSection(link.id)}
-                            className={`font-medium transition-colors hover:text-blue-500 ${scrolled ? 'text-gray-700' : 'text-gray-800'}`}
+                            className={`font-medium transition-colors hover:text-primary ${scrolled ? 'text-gray-700' : 'text-white'}`}
                         >
                             {link.name}
                         </button>
