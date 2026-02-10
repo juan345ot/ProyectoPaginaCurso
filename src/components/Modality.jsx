@@ -57,7 +57,7 @@ const Modality = () => {
                         
                         <div className="space-y-6">
                             <div className="flex items-start">
-                                <Award className="w-8 h-8 text-primary mr-4 flex-shrink-0" />
+                                <Award className="w-8 h-8 text-primary mr-4 shrink-0" />
                                 <div>
                                     <h4 className="text-xl font-bold text-gray-800">Certificado INAVET</h4>
                                     <p className="text-gray-600">Incluido, sin costo adicional.</p>
@@ -65,7 +65,7 @@ const Modality = () => {
                             </div>
                             
                             <div className="flex items-start">
-                                <Award className="w-8 h-8 text-secondary mr-4 flex-shrink-0" />
+                                <Award className="w-8 h-8 text-secondary mr-4 shrink-0" />
                                 <div>
                                     <h4 className="text-xl font-bold text-gray-800">Certificación de la Cámara Argentina para la Formación Profesional y la Capacitación Laboral</h4>
                                     <p className="text-gray-600">Opcional, con costo adicional.</p>

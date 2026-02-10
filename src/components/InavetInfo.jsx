@@ -25,21 +25,21 @@ const InavetInfo = () => {
                     <div className="grid md:grid-cols-2 gap-6">
                         <div className="space-y-4">
                             <div className="flex items-start">
-                                <CheckCircle className="text-primary mt-1 mr-3 flex-shrink-0" />
+                                <CheckCircle className="text-primary mt-1 mr-3 shrink-0" />
                                 <span className="text-gray-700">Personas sin experiencia previa</span>
                             </div>
                             <div className="flex items-start">
-                                <CheckCircle className="text-primary mt-1 mr-3 flex-shrink-0" />
+                                <CheckCircle className="text-primary mt-1 mr-3 shrink-0" />
                                 <span className="text-gray-700">Quienes trabajan y necesitan horarios flexibles</span>
                             </div>
                         </div>
                         <div className="space-y-4">
                             <div className="flex items-start">
-                                <CheckCircle className="text-primary mt-1 mr-3 flex-shrink-0" />
+                                <CheckCircle className="text-primary mt-1 mr-3 shrink-0" />
                                 <span className="text-gray-700">Interesados en el área veterinaria</span>
                             </div>
                             <div className="flex items-start">
-                                <CheckCircle className="text-primary mt-1 mr-3 flex-shrink-0" />
+                                <CheckCircle className="text-primary mt-1 mr-3 shrink-0" />
                                 <span className="text-gray-700">Personas que buscan una salida laboral vinculada al sector salud animal</span>
                             </div>
                         </div>
