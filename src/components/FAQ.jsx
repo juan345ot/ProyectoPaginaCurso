@@ -34,7 +34,7 @@ const FAQ = () => {
         },
         {
             question: "¿Hay prácticas presenciales?",
-            answer: "[…] (Se definirá más adelante)"
+            answer: ""
         },
         {
             question: "¿El certificado tiene validez?",

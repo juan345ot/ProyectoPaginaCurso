@@ -36,7 +36,6 @@ const Modality = () => {
                     </h3>
                     <p className="text-gray-700 mb-4">La formación se estructura en 7 módulos progresivos:</p>
                     <div className="p-4 bg-gray-50 rounded-lg border border-gray-200 text-gray-500 italic">
-                        Módulos: […] […] […] […] […] […] […]
                     </div>
                 </div>
 
