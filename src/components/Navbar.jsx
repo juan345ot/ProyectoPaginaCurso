@@ -36,7 +36,7 @@ const Navbar = () => {
         <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md py-4' : 'bg-transparent py-6'}`}>
             <div className="container mx-auto px-4 flex justify-between items-center">
                 <div className="flex items-center cursor-pointer" onClick={() => scrollToSection('inicio')}>
-                    <img src={logo} alt="INAVET Logo" className="h-16 w-auto object-contain" />
+                    <img src={logo} alt="INAVET Logo" className="h-24 w-auto object-contain transition-all duration-300" />
                 </div>
 
                 {/* Desktop Menu */}

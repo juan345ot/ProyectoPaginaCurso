@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="container mx-auto px-4">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 border-b border-primary/30 pb-8">
                     <div className="col-span-1">
-                        <img src={logo} alt="INAVET Logo" className="h-24 w-auto object-contain mb-4 bg-white rounded-full p-2" />
+                        <img src={logo} alt="INAVET Logo" className="h-40 w-auto object-contain mb-4 bg-white rounded-full p-2" />
                         <p className="text-gray-200 max-w-sm">
                             Instituto de formación de Auxiliares Veterinarios.
                         </p>
