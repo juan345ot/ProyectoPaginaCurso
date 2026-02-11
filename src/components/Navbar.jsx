@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Stethoscope } from 'lucide-react';
 
+import logo from '../assets/logo.png';
+
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
@@ -33,9 +35,8 @@ const Navbar = () => {
     return (
         <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md py-4' : 'bg-transparent py-6'}`}>
             <div className="container mx-auto px-4 flex justify-between items-center">
-                <div className="flex items-center space-x-2 text-2xl font-bold text-primary cursor-pointer" onClick={() => scrollToSection('inicio')}>
-                    <Stethoscope size={32} />
-                    <span>INAVET</span>
+                <div className="flex items-center cursor-pointer" onClick={() => scrollToSection('inicio')}>
+                    <img src={logo} alt="INAVET Logo" className="h-16 w-auto object-contain" />
                 </div>
 
                 {/* Desktop Menu */}
