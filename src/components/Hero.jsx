@@ -19,15 +19,13 @@ const Hero = () => {
                         Formación Online de <br/>
                         <span className="text-primary">Auxiliar Veterinario</span>
                     </h1>
-                    <p className="text-xl md:text-2xl mb-12 max-w-2xl mx-auto text-gray-200 font-medium leading-relaxed drop-shadow-md">
-                        Estudiá desde cualquier lugar, comenzá en cualquier mes del año, con clases grabadas y certificación incluida.
+                    <p className="text-xl md:text-2xl mb-4 max-w-2xl mx-auto text-white font-bold leading-relaxed drop-shadow-md">
+                        Capacitación integral con certificación y orientación laboral
+                    </p>
+                    <p className="text-base md:text-lg mb-12 max-w-2xl mx-auto text-gray-300 font-medium leading-relaxed drop-shadow-md">
+                        Estudiá desde cualquier lugar, comenzá en cualquier mes del año, con clases en vivo grabadas
                     </p>
                     <div className="flex flex-col items-center gap-6">
-                         <div className="bg-white/10 backdrop-blur-md px-6 py-3 rounded-2xl border border-white/20">
-                            <p className="text-lg md:text-xl font-bold text-primary">
-                                👉 Sin fechas fijas. Avanzás a tu ritmo.
-                            </p>
-                         </div>
                         <button 
                             onClick={() => document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' })}
                             className="group relative bg-primary hover:bg-primary-hover text-white font-black py-5 px-12 rounded-full transition-all transform hover:scale-105 shadow-[0_20px_40px_-10px_rgba(102,202,247,0.5)] mt-4 text-xl overflow-hidden"

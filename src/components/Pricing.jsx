@@ -1,4 +1,4 @@
-import { CreditCard, Banknote, Check, ArrowRight } from 'lucide-react';
+import { CreditCard, Banknote, Check } from 'lucide-react';
 import { COURSE_INFO } from '../constants/data';
 
 const Pricing = () => {
@@ -74,19 +74,6 @@ const Pricing = () => {
                     </div>
                 </div>
 
-                <div className="mt-20 text-center">
-                    <button 
-                        onClick={() => document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' })}
-                        className="group relative bg-secondary hover:bg-secondary-hover text-white px-10 py-5 rounded-full font-black text-xl shadow-[0_15px_30px_-10px_rgba(112,62,151,0.5)] transition-all transform hover:scale-105 active:scale-95 overflow-hidden"
-                        aria-label="Ir a la sección de contacto para reservar cupo"
-                    >
-                        <span className="absolute inset-0 bg-white/10 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></span>
-                        <span className="flex items-center gap-3">
-                            ¡Inscribite hoy y reservá tu cupo!
-                            <ArrowRight className="group-hover:translate-x-2 transition-transform" />
-                        </span>
-                    </button>
-                </div>
             </div>
         </section>
     );

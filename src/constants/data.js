@@ -42,8 +42,8 @@ export const FAQ_DATA = [
 export const MODALITY_DATA = {
     features: [
         {
-            title: "Clases grabadas",
-            description: "Disponibles las 24 hs. No es obligatorio conectarse en vivo.",
+            title: "Clases en vivo grabadas",
+            description: "Disponibles las 24 hs. No es obligatorio conectarse al vivo.",
             icon: "Video"
         },
         {
