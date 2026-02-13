@@ -3,19 +3,19 @@ import { CheckCircle } from 'lucide-react';
 
 const InavetInfo = () => {
     return (
-        <section id="inavet" className="py-24 bg-white relative overflow-hidden">
+        <section id="inavet" className="py-24 bg-primary relative overflow-hidden">
             {/* Decorative background circle */}
             <div className="absolute top-24 -right-24 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
             
             <div className="container mx-auto px-4 relative z-10">
                 {/* ¿QUÉ ES INAVET? */}
                 <div className="mb-24 text-center">
-                    <h2 className="text-3xl md:text-5xl font-black text-secondary mb-10 uppercase tracking-tighter">¿QUÉ ES INAVET?</h2>
-                    <div className="max-w-4xl mx-auto text-gray-700 text-xl md:text-2xl leading-relaxed space-y-8 font-medium">
+                    <h2 className="text-3xl md:text-5xl font-black text-white mb-10 uppercase tracking-tighter">¿QUÉ ES INAVET?</h2>
+                    <div className="max-w-4xl mx-auto text-white text-xl md:text-2xl leading-relaxed space-y-8 font-medium">
                         <p className="border-l-4 border-primary pl-8 text-left">
                             INAVET es un instituto de formación dedicado a la capacitación de Auxiliares Veterinarios, con modalidad 100% online, orientado a una formación práctica, clara y accesible.
                         </p>
-                        <p className="bg-gray-50 p-8 rounded-4xl border border-gray-100 italic text-gray-600">
+                        <p className="bg-white/20 backdrop-blur-sm p-8 rounded-4xl border border-white/30 italic text-white">
                             Nuestra propuesta está pensada para personas que desean adquirir conocimientos reales del trabajo auxiliar en el ámbito veterinario, con acompañamiento docente y contenidos organizados de forma progresiva.
                         </p>
                     </div>

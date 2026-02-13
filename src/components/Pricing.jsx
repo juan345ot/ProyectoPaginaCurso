@@ -3,12 +3,12 @@ import { COURSE_INFO } from '../constants/data';
 
 const Pricing = () => {
     return (
-        <section id="inversion" className="py-24 bg-white relative">
+        <section id="inversion" className="py-24 bg-primary relative">
             <div className="container mx-auto px-4 max-w-6xl">
                 <div className="grid md:grid-cols-2 gap-12 items-stretch">
                     {/* INVERSIÓN */}
                     <div className="flex flex-col">
-                        <h2 className="text-3xl md:text-5xl font-black text-secondary mb-10 text-center md:text-left uppercase tracking-tight font-display">INVERSIÓN</h2>
+                        <h2 className="text-3xl md:text-5xl font-black text-white mb-10 text-center md:text-left uppercase tracking-tight font-display">INVERSIÓN</h2>
                         <div className="bg-white rounded-4xl p-10 shadow-premium border border-gray-100 grow relative overflow-hidden group">
                             <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-700"></div>
                             
@@ -24,7 +24,7 @@ const Pricing = () => {
                                         <div className="bg-green-500 text-white p-1 rounded-full mr-4">
                                             <Check size={18} />
                                         </div>
-                                        <p className="font-black text-green-700">MATRÍCULA BONIFICADA POR APERTURA</p>
+                                        <p className="font-black text-green-700">MATRÍCULA BONIFICADA POR APERTURA (mes de marzo)</p>
                                     </div>
 
                                     <ul className="space-y-4 pt-4">
@@ -34,7 +34,7 @@ const Pricing = () => {
                                         </li>
                                         <li className="flex items-center group/item cursor-default">
                                             <div className="w-2 h-2 bg-primary rounded-full mr-4 group-hover/item:scale-150 transition-transform"></div>
-                                            <span className="text-secondary font-bold text-lg leading-tight uppercase tracking-wide font-display">Descuento especial por pago completo</span>
+                                            <span className="text-secondary font-bold text-lg leading-tight uppercase tracking-wide font-display">Descuento especial por pago completo (10%)</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -44,7 +44,7 @@ const Pricing = () => {
 
                     {/* MEDIOS DE PAGO */}
                     <div className="flex flex-col">
-                        <h2 className="text-3xl md:text-5xl font-black text-secondary mb-10 text-center md:text-left uppercase tracking-tight font-display">MEDIOS DE PAGO</h2>
+                        <h2 className="text-3xl md:text-5xl font-black text-white mb-10 text-center md:text-left uppercase tracking-tight font-display">MEDIOS DE PAGO</h2>
                         <div className="space-y-6 grow">
                             <div className="bg-gray-50 p-8 rounded-4xl border border-gray-100 flex items-start group hover:bg-white hover:shadow-premium transition-all duration-300 transform hover:-translate-x-2">
                                 <div className="bg-white p-4 shadow-soft-depth rounded-2xl mr-6 group-hover:bg-primary transition-colors">

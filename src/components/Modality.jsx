@@ -10,11 +10,11 @@ const iconMap = {
 
 const Modality = () => {
     return (
-        <section id="modalidad" className="py-24 bg-gray-50">
+        <section id="modalidad" className="py-24 bg-primary">
             <div className="container mx-auto px-4">
                 
                 {/* MODALIDAD DE CURSADA */}
-                <h2 className="text-3xl md:text-5xl font-black text-secondary mb-16 text-center uppercase tracking-tight font-display">
+                <h2 className="text-3xl md:text-5xl font-black text-white mb-16 text-center uppercase tracking-tight font-display">
                     Modalidad de Cursada
                 </h2>
 

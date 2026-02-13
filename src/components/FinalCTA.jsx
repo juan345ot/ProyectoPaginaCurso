@@ -3,7 +3,7 @@ import { CONTACT_INFO } from '../constants/data';
 
 const FinalCTA = () => {
     return (
-        <section id="contacto" className="py-24 bg-white relative overflow-hidden">
+        <section id="contacto" className="py-24 bg-primary relative overflow-hidden">
             {/* Elementos decorativos de fondo */}
             <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-primary to-secondary opacity-20"></div>
             <div className="absolute -bottom-24 -right-24 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
@@ -11,10 +11,10 @@ const FinalCTA = () => {
 
             <div className="container mx-auto px-4 text-center relative z-10">
                 <div className="max-w-3xl mx-auto">
-                    <h2 className="text-3xl md:text-5xl font-black text-secondary mb-6 uppercase tracking-tight">
+                    <h2 className="text-3xl md:text-5xl font-black text-white mb-6 uppercase tracking-tight">
                         ¿Querés recibir más información o inscribirte?
                     </h2>
-                    <p className="text-xl text-gray-600 mb-12 font-medium">
+                    <p className="text-xl text-white/80 mb-12 font-medium">
                         Estamos listos para asesorarte y ayudarte a dar el primer paso en tu carrera profesional.
                     </p>
                     

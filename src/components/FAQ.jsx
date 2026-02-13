@@ -38,14 +38,14 @@ const FAQ = () => {
     const faqs = FAQ_DATA;
 
     return (
-        <section id="faq" className="py-24 bg-gray-50/50 relative overflow-hidden">
+        <section id="faq" className="py-24 bg-primary relative overflow-hidden">
             <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/5 rounded-full blur-3xl -mr-32 -mt-32"></div>
             <div className="absolute bottom-0 left-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -ml-32 -mb-32"></div>
             
             <div className="container mx-auto px-4 max-w-4xl relative z-10">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-5xl font-black text-secondary mb-6 uppercase tracking-tight">Preguntas Frecuentes</h2>
-                    <p className="text-xl text-gray-500 font-medium">Despejá tus dudas y comenzá hoy mismo.</p>
+                    <h2 className="text-3xl md:text-5xl font-black text-white mb-6 uppercase tracking-tight">Preguntas Frecuentes</h2>
+                    <p className="text-xl text-white/80 font-medium">Despejá tus dudas y comenzá hoy mismo.</p>
                 </div>
                 
                 <div className="space-y-2">
