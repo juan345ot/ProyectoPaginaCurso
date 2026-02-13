@@ -23,19 +23,19 @@ export const NAV_LINKS = [
 export const FAQ_DATA = [
     {
         question: "¿Tengo que conectarme en vivo?",
-        answer: "No. Las clases quedan grabadas para que las veas cuando quieras, lo que te permite organizar tus horarios con total libertad."
+        answer: "No. Las clases quedan grabadas para que las veas cuando quieras."
     },
     {
         question: "¿Necesito experiencia previa?",
-        answer: "No. La formación está pensada desde un nivel inicial, ideal para quienes aman a los animales y quieren comenzar su camino profesional."
+        answer: "No. La formación está pensada desde nivel inicial."
     },
     {
-        question: "¿Cómo accedo al material?",
-        answer: "Una vez inscripto, recibirás tus claves de acceso a nuestra plataforma online donde encontrarás todos los módulos y recursos."
+        question: "¿Hay prácticas presenciales?",
+        answer: ""
     },
     {
         question: "¿El certificado tiene validez?",
-        answer: "Al finalizar, recibís el certificado institucional de INAVET. Además, tenés la opción de tramitar la certificación de la Cámara Argentina para la Formación Profesional."
+        answer: "El certificado INAVET es institucional. La certificación UTN será opcional en caso de confirmarse."
     }
 ];
 
