@@ -1,45 +1,78 @@
-import React from 'react';
-import { MessageCircle, Instagram } from 'lucide-react';
+import { Instagram, Send } from 'lucide-react';
+import { CONTACT_INFO } from '../constants/data';
 
 const FinalCTA = () => {
     return (
-        <section id="contacto" className="py-16 bg-linear-to-br from-blue-50 to-white">
-            <div className="container mx-auto px-4 text-center">
-                <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-8">
-                    📩 ¿Querés recibir más información o inscribirte?
-                </h2>
-                
-                <button 
-                  className="bg-primary hover:bg-opacity-90 text-white font-bold py-4 px-10 rounded-full text-xl shadow-xl transition-all transform hover:scale-105 mb-12"
-                  onClick={() => window.open('https://wa.me/542926451511', '_blank')}
-                >
-                    Inscribirme / Pedir información
-                </button>
+        <section id="contacto" className="py-24 bg-white relative overflow-hidden">
+            {/* Elementos decorativos de fondo */}
+            <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-primary to-secondary opacity-20"></div>
+            <div className="absolute -bottom-24 -right-24 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
+            <div className="absolute -top-24 -left-24 w-64 h-64 bg-secondary/5 rounded-full blur-3xl"></div>
 
-                <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-16">
-                    <a 
-                        href="https://wa.me/542926451511" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="flex items-center justify-center gap-3 text-gray-700 hover:text-green-600 transition-colors"
-                    >
-                        <div className="bg-green-100 p-3 rounded-full">
-                            <MessageCircle size={24} className="text-green-600" />
-                        </div>
-                        <span className="text-xl font-medium">2926 45-1511</span>
-                    </a>
+            <div className="container mx-auto px-4 text-center relative z-10">
+                <div className="max-w-3xl mx-auto">
+                    <h2 className="text-3xl md:text-5xl font-black text-secondary mb-6 uppercase tracking-tight">
+                        ¿Querés recibir más información o inscribirte?
+                    </h2>
+                    <p className="text-xl text-gray-600 mb-12 font-medium">
+                        Estamos listos para asesorarte y ayudarte a dar el primer paso en tu carrera profesional.
+                    </p>
+                    
+                    <div className="flex flex-col items-center gap-4 mb-20">
+                        <button 
+                            className="group relative bg-[#25D366] hover:bg-[#20ba5a] text-white font-black py-5 px-12 rounded-full text-xl shadow-[0_10px_20px_-5px_rgba(37,211,102,0.4)] transition-all transform hover:scale-105 active:scale-95 flex items-center gap-3 overflow-hidden"
+                            onClick={() => window.open(`https://wa.me/${CONTACT_INFO.whatsapp}`, '_blank')}
+                        >
+                            <span className="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="white" className="fill-current">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                            </svg>
+                            Inscribirme / Pedir información
+                        </button>
+                        <p className="text-sm font-bold text-[#25D366] animate-pulse">
+                            ¡Respondemos al instante!
+                        </p>
+                    </div>
 
-                    <a 
-                        href="https://instagram.com/institutoinavet" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="flex items-center justify-center gap-3 text-gray-700 hover:text-pink-600 transition-colors"
-                    >
-                         <div className="bg-pink-100 p-3 rounded-full">
-                            <Instagram size={24} className="text-pink-600" />
-                        </div>
-                        <span className="text-xl font-medium">@institutoinavet</span>
-                    </a>
+                    <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+                        <a 
+                            href={`https://wa.me/${CONTACT_INFO.whatsapp}`} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="flex items-center justify-between p-6 bg-gray-50 rounded-3xl hover:bg-white hover:shadow-xl transition-all border border-gray-100 group"
+                        >
+                            <div className="flex items-center gap-4">
+                                <div className="bg-[#25D366]/10 p-3 rounded-2xl group-hover:bg-[#25D366] transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#25D366" className="group-hover:fill-white">
+                                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                                    </svg>
+                                </div>
+                                <div className="text-left">
+                                    <p className="text-xs font-black text-gray-400 uppercase tracking-widest">WhatsApp</p>
+                                    <p className="text-lg font-bold text-gray-700">{CONTACT_INFO.whatsappDisplay}</p>
+                                </div>
+                            </div>
+                            <Send size={20} className="text-gray-300 group-hover:text-primary transform transition-transform group-hover:translate-x-1" />
+                        </a>
+
+                        <a 
+                            href={CONTACT_INFO.instagramUrl} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="flex items-center justify-between p-6 bg-gray-50 rounded-3xl hover:bg-white hover:shadow-xl transition-all border border-gray-100 group"
+                        >
+                            <div className="flex items-center gap-4">
+                                <div className="bg-pink-100 p-3 rounded-2xl group-hover:bg-linear-to-tr group-hover:from-yellow-400 group-hover:to-purple-600 transition-all">
+                                    <Instagram size={24} className="text-pink-600 group-hover:text-white" />
+                                </div>
+                                <div className="text-left">
+                                    <p className="text-xs font-black text-gray-400 uppercase tracking-widest">Instagram</p>
+                                    <p className="text-lg font-bold text-gray-700">@{CONTACT_INFO.instagram}</p>
+                                </div>
+                            </div>
+                            <Send size={20} className="text-gray-300 group-hover:text-primary transform transition-transform group-hover:translate-x-1" />
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>

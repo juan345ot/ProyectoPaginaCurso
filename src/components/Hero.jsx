@@ -6,31 +6,43 @@ const Hero = () => {
             {/* Background Image with Overlay */}
             <div className="absolute inset-0 z-0">
                 <img 
-                    src="https://images.unsplash.com/photo-1599443015574-be5fe8a05783?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" 
+                    src="https://images.unsplash.com/photo-1599443015574-be5fe8a05783?ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80&fm=webp" 
                     alt="Veterinary Assistant" 
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover scale-105 animate-slow-zoom"
                 />
-                <div className="absolute inset-0 bg-black/50"></div>
+                <div className="absolute inset-0 bg-linear-to-b from-secondary/60 to-black/80"></div>
             </div>
 
             <div className="container mx-auto px-4 z-10 text-center text-white">
-                <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in-up">
-                    Formación Online de Auxiliar Veterinario
-                </h1>
-                <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto text-gray-200">
-                    Estudiá desde cualquier lugar, comenzá en cualquier mes del año, con clases grabadas y certificación incluida.
-                </p>
-                <div className="flex flex-col items-center gap-4">
-                     <p className="text-lg font-semibold text-primary">
-                        👉 Sin fechas fijas. Avanzás a tu ritmo.
+                <div className="max-w-4xl mx-auto">
+                    <h1 className="text-4xl md:text-7xl font-black mb-8 leading-tight tracking-tighter drop-shadow-2xl">
+                        Formación Online de <br/>
+                        <span className="text-primary">Auxiliar Veterinario</span>
+                    </h1>
+                    <p className="text-xl md:text-2xl mb-12 max-w-2xl mx-auto text-gray-200 font-medium leading-relaxed drop-shadow-md">
+                        Estudiá desde cualquier lugar, comenzá en cualquier mes del año, con clases grabadas y certificación incluida.
                     </p>
-                    <button 
-                        onClick={() => document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' })}
-                        className="bg-primary hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105 shadow-lg mt-4"
-                    >
-                        Inscribirme / Pedir información
-                    </button>
+                    <div className="flex flex-col items-center gap-6">
+                         <div className="bg-white/10 backdrop-blur-md px-6 py-3 rounded-2xl border border-white/20">
+                            <p className="text-lg md:text-xl font-bold text-primary">
+                                👉 Sin fechas fijas. Avanzás a tu ritmo.
+                            </p>
+                         </div>
+                        <button 
+                            onClick={() => document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' })}
+                            className="group relative bg-primary hover:bg-primary-hover text-white font-black py-5 px-12 rounded-full transition-all transform hover:scale-105 shadow-[0_20px_40px_-10px_rgba(102,202,247,0.5)] mt-4 text-xl overflow-hidden"
+                            aria-label="Ir a la sección de contacto para inscribirse"
+                        >
+                            <span className="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></span>
+                            Inscribirme / Pedir información
+                        </button>
+                    </div>
                 </div>
+            </div>
+            
+            {/* Scroll Indicator */}
+            <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce opacity-50">
+                <div className="w-1 h-12 bg-linear-to-b from-primary to-transparent rounded-full"></div>
             </div>
         </section>
     );
