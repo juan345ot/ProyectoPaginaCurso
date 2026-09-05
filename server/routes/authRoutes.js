@@ -18,14 +18,19 @@ router.post('/login', async (req, res) => {
   try {
     const { username, password } = req.body;
 
-    if (!username || !password) {
+    if (typeof username !== 'string' || !username.trim() || typeof password !== 'string' || !password) {
       return res.status(400).json({
         success: false,
-        message: 'Por favor, ingresá usuario y contraseña',
+        message: 'Por favor, ingresá usuario o DNI y contraseña',
       });
     }
 
-    const user = await User.findOne({ username: username.toLowerCase().trim() });
+    const identifier = username.trim();
+    // Preserve existing username access when a numeric username overlaps a DNI.
+    let user = await User.findOne({ username: identifier.toLowerCase() });
+    if (!user) {
+      user = await User.findOne({ dni: identifier });
+    }
 
     if (!user) {
       return res.status(401).json({
@@ -113,3 +118,4 @@ router.get('/me', protect, async (req, res) => {
 });
 
 export default router;
+
