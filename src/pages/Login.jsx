@@ -93,7 +93,7 @@ const Login = () => {
                   required
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
-                  placeholder="Tu nombre de usuario"
+                  placeholder="Tu nombre de usuario o DNI"
                   className="w-full pl-11 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-2xl text-slate-800 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
                 />
               </div>
@@ -151,3 +151,4 @@ const Login = () => {
 };
 
 export default Login;
+
