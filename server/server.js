@@ -16,6 +16,8 @@ const app = express();
 const allowedOrigins = [
   'http://localhost:5173',
   'http://localhost:4173',
+  'https://inavet.com.ar',
+  'https://www.inavet.com.ar',
   process.env.FRONTEND_URL, // URL del Static Site de Render
 ].filter(Boolean);
 
